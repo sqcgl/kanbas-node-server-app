@@ -59,7 +59,7 @@ export default function WorkingWithArrays(app) {
       return;
     }
     todos.splice(todoIndex, 1);
-    res.sendStatus(200);
+    res.status(200);
   });
 
   app.get("/lab5/todos/:id/title/:title", (req, res) => {
@@ -96,6 +96,6 @@ export default function WorkingWithArrays(app) {
       }
       return t;
     });
-    res.sendStatus(200);
+    res.status(200);
   });
 }
